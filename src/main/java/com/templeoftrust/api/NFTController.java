@@ -18,7 +18,7 @@ public class NFTController {
         Map<String, Object> meta = new HashMap<>();
         meta.put("description", "Temple of Trust token."
                 + "Everybody wants it, but how to get one?");
-        meta.put("image", "https://127.0.0.1/nft/tot/" + tokenSym + ".png");
+        meta.put("image", "https://s3.eu-central-1.amazonaws.com/nft.templeoftrust.art/" + tokenSym + "/tokenId.jpg");
         //meta.put("background_color", "#0e0e0e");
         meta.put("name", "Suske and Wiske");
 
