@@ -16,10 +16,11 @@ public class NFTController {
     @RequestMapping(value = "/templeoftrust/{tokenSym}/{tokenId}", method = GET)
     public Map<String, Object> getErc20BoxMeta(@PathVariable String tokenSym, @PathVariable String tokenId) {
         Map<String, Object> meta = new HashMap<>();
-        meta.put("description", "Temple of Trust token."
+        meta.put("description", "Temple of Trust token. "
                 + "Everybody wants it, but how to get one?");
-        meta.put("image", "https://s3.eu-central-1.amazonaws.com/nft.templeoftrust.art/" + tokenSym + "/tokenId.jpg");
-        //meta.put("background_color", "#0e0e0e");
+        meta.put("external_url", "http://templeoftrust.art/");
+        meta.put("image", "https://s3.eu-central-1.amazonaws.com/nft.templeoftrust.art/" + tokenSym + "/" + tokenId + ".png");
+        //meta.put("background_color", "0e0e0e");
         meta.put("name", "Suske and Wiske");
 
         return meta;
