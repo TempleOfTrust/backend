@@ -21,7 +21,7 @@ public class NFTController {
         meta.put("external_url", "http://templeoftrust.art/");
         meta.put("image", "https://s3.eu-central-1.amazonaws.com/nft.templeoftrust.art/" + tokenSym + "/" + tokenId + ".png");
         //meta.put("background_color", "0e0e0e");
-        meta.put("name", "Suske and Wiske");
+        meta.put("name", "Suske and Wiske " + tokenId);
 
         return meta;
 
